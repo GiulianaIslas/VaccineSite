@@ -1,213 +1,175 @@
-*{
-    box-sizing: border-box;
+body{
+    min-width: 1100px;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+button{
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
 }
 .menu{
     display: flex;
-    background-color: white;
-    flex-flow: row;
-    height: 10vh;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 95px;
 }
-.menu-left{
-    display: flex;
-    width: 38vw;
-    justify-content: center;
-    flex-flow: row;
-    margin: 10px;
+.menu-left-button{
+    width: 400px;
+    background-color: white;
+    color: #548CFF;
+    font-size: larger;
+    font-weight: bolder;
 }
 .menu-right{
     display: flex;
-    justify-content: space-evenly;
-    flex-flow: row;
-    width:62vw;
-    margin: 10px;
-
-}
-.menu-box-left{
-    background-color: white;
-    color: rgb(7, 52, 199);
-    border: none;
-    cursor: pointer;  
-    width: 35vw;
+    justify-content: space-around;
+    width: 62%;
     height: 100%;
-    font-size: large;
-    font-weight: 700;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
 }
-.menu-box{
+.menu-right-button{
     background-color: white;
-    color: rgb(112, 106, 106);
-    border: none;
-    cursor: pointer;
-    width: 10vw;
-    height: 100%;
-    font-size: 14px;
-    font-weight: 500;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkgrey;
+    font-size: medium;
+    font-weight: 550;
 }
-.menu-box-blue{
-    background-color: rgb(76, 102, 248);
+.menu-right-button-blue{
+    background-color: #548CFF;
     color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 8vw;
-    height: 100%;
-    font-size: 14px;
-    font-weight: 500;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 2px 2px 5px #c7c7c7;
-
+    width: 15%;
+    height: 60%;
+    font-size: medium;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px lightgrey;
 }
 .page1{
-    background-image: url("fondoPage1.png");
     display: flex;
-    background-color: white;
-    flex-flow: row;   
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
     height: 90vh;
-    width: auto;
+    min-width: 1000px;
+    min-height: 900px;
 }
 .page1-text{
     display: flex;
-    flex-flow: column;
-    width: 60vw;
-    height: 90vh;
+    flex-flow:column;
     justify-content: center;
     align-items: center;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2E4C6D;
+    width: 50%;
+    height: 100%;
+    background-image: url("fondoPage1text.png");
+    z-index: -1;
 
 }
-.page1-text-title{
-    width: fit-content;
-    text-align: left;
-    margin-bottom: 5px;
-    
+.page1-title{
+    width:50%;
+    height: 20%;
+    font-family: Calibri;
+    font-size: 7vh;
+    font-weight: bold;
+    color: #2E4C6D;
+    margin-bottom: 30px;
 }
-.page1-text-title-div{
-    font-size:55px;
-    width: 450px;
-    text-align: left;
-    font-weight: bolder;
-    color: rgb(52, 66, 112);
-    font-family: sans-serif;
+.p{
+    font-size: x-large;
+    color: darkgrey;
+    font-weight: 450;
+    width: 50%;
+    margin-bottom: 50px;
 }
-.page1-text-p{
-    text-align: left;
-    font-size: 22px;
-    width: 450px;
-    text-align: left;
-    margin: 15px;
-    color: rgb(81, 84, 128);
-    font-weight: 200;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.page1-text-vignetes{
+.page1-vignettes{
     display: flex;
-    flex-flow: row;
-    width: 450px;
+    width: 50%;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 70px;
+    vertical-align: center;
+    margin-bottom: 115px;
 }
-.page1-text-vignetes-div{
-    width: 150px;
-    font-size: large;
-    color: rgb(42, 42, 104);
+.page1-vignettes-img{
+    height: 20px;
+    margin-right: 10px;
+}
+.page1-vignettes-p{
+    color: #2E4C6D;
     font-weight: 500;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    font-size: large;
+    margin-right: 20px;
 }
-.page1-text-vignetes-img{
-    width: 30px;
-    margin-right: 5px;
+.page1-vignettes2-img{
+    height: 25px;
+    margin-right: 20px;
 }
-.page1-text-vignetes2{
+.page1-vignettes2-p{
+    color: #2E4C6D;
+    font-weight: 500;
+    font-size: x-large;
+}
+.page1-right{
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+.page1-img{
+    width: 100%;
+    min-width: 600px;
+    height: 100%;
+}
+.page1-form{
     display: flex;
-    flex-flow: row;
-    width: 450px;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
-    text-align: left;
-    margin-bottom: 80px;
-}
-.page1-text-vignetes2-img{
-    width: 50px;
-    margin-right: 5px;
-}
-.page1-text-vignetes2-div{
-    width: 400px;
-    font-size: 20px;
-    color: rgb(42, 42, 104);
-    font-weight: bolder;
-    font-weight: 625;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-.img-vacuna{
-    background-image: url("vacunaFondo.JPG");
-    width: 40vw;
-    height: 90vh;
-}
-.form{
-    position: absolute;
-    background-color: white;
-    display: flex;
-    width: 60vw;
     height: 15vh;
-    flex-direction: row;
-    box-shadow: 5px 5px 5px #c7c7c7;
-    border-radius: 8px;
+    min-height: 65px;
+    min-width: 800px;
+    width: 55vw;
     margin-top: -20vh;
-    margin-left: 225px;
-    z-index: 2;
-    justify-content: space-around;
-    align-items: center;
+    margin-left: 12vw;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 60px lightgrey;
 }
 .form-column{
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: center;
-    width: 150px;
+    text-align: left;
+    align-items: flex-start;
 }
-
-.form-column-title{
+.form-column-header{
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 10px;
-    
+    vertical-align: center;
 }
-.form-column-title-img{
-    width: 25px;
+.form-column-img{
+    height: 16px;
+    margin-right: 8px;
 }
-.form-column-title-div{
-    text-align: left;
-    font-size: 18px;
-    margin-left: 5px;
-    color: rgb(81, 84, 128);
-    font-weight: 250;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.form-title{
+    color: darkgrey;
+    font-size: large;
+    font-weight: 500;
 }
-.form-column-div{
-    font-size: 20px;
-    color: rgb(42, 42, 104);
-    font-weight: bolder;
-    margin-left: 20px;
-    text-align: left;
-    font-family: sans-serif;
-
+.form-p{
+    margin-top: 10px;
+    margin-left: 22px;
+    color: #2E4C6D;
+    font-size: x-large;
+    font-weight: bold;
 }
-.form-button{
-    background-color: rgb(76, 102, 248);
+.form-submit{
+    width: 150px;
+    height: 50px;
+    background-color: #548CFF;
     color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    height: 8vh;
-    width: 100px;
-    font-size: small;
-    font-weight: 600;
-    box-shadow: 2px 2px 5px #c7c7c7;
-
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 3px 3px 10px lightgrey;
 }
